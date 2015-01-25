@@ -2,7 +2,6 @@
 layout: post
 title:  "Boot up"
 date:   2015-01-25 19:15:35
-categories: jekyll update
 ---
 Hi!
 
