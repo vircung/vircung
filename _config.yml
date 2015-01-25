@@ -1,0 +1,12 @@
+# Site settings
+title: Developer's adventures
+email: jacek.nakonieczny@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Yet Another Developer's Blog. Place to drop toughts and notes about work, personal projects and other stuff.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://vircung.github.io" # the base hostname & protocol for your site
+twitter_username: vircung
+github_username:  vircung
+
+# Build settings
+markdown: kramdown
