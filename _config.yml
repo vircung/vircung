@@ -11,3 +11,4 @@ github_username:  vircung
 
 # Build settings
 markdown: kramdown
+excerpt_separator: <!--more-->
