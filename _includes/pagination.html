@@ -1,0 +1,19 @@
+<div class="row clearfix">
+  <div class="pull-left">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="btn btn-default">
+        <i class="fa fa-arrow-left"></i>
+        {{ page.previous.title }}
+      </a>
+    {% endif %}
+  </div>
+
+  {% if page.next.url %}
+    <div class="pull-right">
+      <a href="{{ page.next.url }}" title="{{ page.next.title }}" class="btn btn-default">
+        {{ page.next.title }}
+        <i class="fa fa-arrow-right"></i>
+      </a>
+    </div>
+  {% endif %}
+</div>
