@@ -34,7 +34,7 @@ And here goes basic Vagrant usage workflow:
 * do you work
 * `vagrant halt` or `vagrant destroy`
 
-Command `vagrant up` basicaly says: 'Hey bring this VM to life and set it up!'. It means Vagrant will try to:
+Command `vagrant up` basically says: 'Hey bring this VM to life and set it up!'. It means Vagrant will try to:
 
 * find VM in imported boxes
 * if fail and if link to box is provided it'll download and import box from provided link
@@ -45,16 +45,10 @@ Rest of commands is basically self explanatory but `vagrant destroy`. Destroy me
 
 ## One step fruther
 
-There is one more thing. If your project is hosted on VPS you certainly have specific configuration for this server. Good practice is to develop on envoirnment configured as close as possible to prodction/live configuration. That's because if you upgrade some tools, libs or apply security patches you don't want to be suprised when something goes wrong.
+There is one more thing. If your project is hosted on VPS you certainly have specific configuration for this server. Good practice is to develop on envoirnment configured as close as possible to prodction/live configuration. That's because if you upgrade some tools, libs or apply security patches you don't want to be surprised when something goes wrong.
 
 There are other tools (of course they are) that helps to manage those server configurations. For example [chef][chef-site], [puppet][puppet-site], [ansible][ansible-site] and many other. And of course you can apply them to configure you Vagrant box as your production server.
 
 I'll cover at least one of them so stay tuned.
 
-[virtual-box]:https://www.virtualbox.org/
-[vagrant-up]:https://www.vagrantup.com/
-[vagrant-atlas]:https://atlas.hashicorp.com/boxes/search
-[yamem-site]:http://yamem.org/
-[chef-site]:https://www.chef.io/
-[puppet-site]:https://puppetlabs.com/
-[ansible-site]:www.ansible.com
+{% include links_library.md %}

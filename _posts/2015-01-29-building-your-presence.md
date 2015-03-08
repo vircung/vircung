@@ -56,19 +56,4 @@ In first post i said in [first post]({% post_url 2015-01-25-boot-up %}) i starte
 
 Definitely I'll be 'visible' at [local Hackerspace][hackerspace-lbn] meetings and projects. Furthermore i have plans to extend and enhance my new pet project for managing Events which have ambitious name [YAMEM][yamem-site]. Fill free to post any issues and possible features in [public repo][yamem-issues]
 
-[wordpress]: https://wordpress.com/
-[blogger]: https://www.blogger.com/
-[tumblr]: https://www.tumblr.com/
-[github]: https://pages.github.com/
-
-[dobreprogramy-vircung]: http://www.dobreprogramy.pl/vircung
-[wordpress-vircung]: https://nawypasie.wordpress.com/
-
-[lubcamp]: http://lubcamp.pl/
-[hackerspace-lbn]: http://hackerspace-lbn.pl/
-[ldi]: http://ldi.org.pl/
-[kul-net]: https://www.facebook.com/GrupaKulNet
-[pull-requests]: https://github.com/vircung/vircung.github.io/pulls
-[yamem-site]: http://yamem.org/
-[yamem-issues]: https://github.com/YAMEM/issues
-[hobby]: https://nawypasie.wordpress.com/category/hobby/
+{% include links_library.md %}
