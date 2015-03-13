@@ -9,6 +9,8 @@ tl;dr
 
 I share my story and [plans](#personal-plans) for this year.
 
+<!-- more -->
+
 Go on ...
 ---
 
