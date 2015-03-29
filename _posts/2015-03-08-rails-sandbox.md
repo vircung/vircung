@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rails Sandbox"
-date:   2015-03-28 23:40:00
+date:   2015-03-08 23:40:00
 ---
 
 In previous post i scratched the topic of managing and sharing your development environment. By using Vagrant to manage virtual machines and one of provision tools you can setup configurable environment. Furthermore you can setup your production machine to match this configuration. Lets roll up our sleeves and set it up.
