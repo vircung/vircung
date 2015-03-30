@@ -8,7 +8,7 @@ In previous post i scratched the topic of managing and sharing your development 
 
 <!-- more -->
 
-### Vagrant setup
+## Vagrant setup
 
 You need to install few things: [Vagrant][vagrant-up], VM manager (i'll choose [VirtualBox][virtual-box]) and [ruby][ruby-site]. Also as a base linux distribution i'll use Ubuntu.
 
@@ -18,7 +18,7 @@ First step is to prepare Vagrant configuration so execute `vagrant init` command
 
 Now each time when you execute `vagrant up` vagrant will search for box with this name. If doesn't find it in imported boxes will search his [online catalog][vagrant-atlas] and download it for you. You can also safely `vagrant destroy` if needed (for sure we will use it later).
 
-### Provisioning
+## Provisioning
 
 Vagrant has built in functionality to [provision][vagrant-provision] box while creating it. What it means is that you can execute custom scripts that will install and configure software for you. There are some tools that support this kind of operations which i mentioned in previous post. For now i will use [chef solo][vagrant-chef-solo] provisioner.
 
@@ -38,7 +38,7 @@ Now we need to tell Vagrant where is should search for cookbooks and roles. Also
 
 {% gist 9d535d659d116aec00e6/78740962f915f44084a196434bebbea39fbd5310 Vagrantfile %}
 
-### Cooking ruby
+## Cooking ruby
 
 Now lets add first cookbook to install [RVM][rvm-site] and configure it to install newest ruby version (2.2.0). Add `cookbook 'rvm', '~> 0.9.2'` to `Cheffile` and execute `librarian-chef install`. Cookbook for rvm and all it's dependencies will be places in `cookbooks` folder which will be searched by Vagrant provisioning.
 
@@ -54,7 +54,7 @@ Now lets execute `vagrant reload` to refresh synchronized folders and `vagrant p
 
 Every time when you execute `vagrant destroy` and `vagrant up` you will end up with VM configure exactly same way.
 
-### Cooking postgresql
+## Cooking postgresql
 
 As a database backend PostgreSQL is used frequently if application is either self hosted on VPS or on Heroku. In second case PostgreSQL if forced by hosting provider. So having it configured in development enviornment is helpful. Let's add required cookbook and adjust our role.
 
@@ -66,7 +66,7 @@ Don't forget to execute `librarian-chef install` to actually install new cookboo
 
 If we are using standalone version of chef (other option is that chef recipies are managed by dedicated server) there is a need to setup password for `postgres` user. Another catch is that to allow `postgres` user to be authenticated by password. That is why we set `pg_hba` variables which are reflected in configuration with same name. I took value of this attribute from original recipe and changed authentication method from `ident` to `md5` for `postgres` user.
 
-### Last touches
+## Last touches
 
 Last things to setup in vagrant is to expose port that is used by rails to host machine. Current folder is mounted in `/vagrant` path by default. If project is kept in different folder than folder with Vagrantfile you need to explicit setup it to be mounted in VM. Let's do this and we will be able to create new project!
 

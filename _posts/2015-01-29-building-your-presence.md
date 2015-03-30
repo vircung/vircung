@@ -38,7 +38,7 @@ From my point of view the most valuable and also fearful experience was speaking
 
 But I need to confess i gave one answer **Hmm, I don't know, sorry. But catch me later we'll figure it out together**. It was very uncomfortable to me to say that and this disturbed me for quite a while. But hey, nobody's perfect and nobody knows answers from the beginning.
 
-### Topics ###
+### Topics
 
 One of blockers for me to start doing this was finding the topic. I just didn't know what to speak or write about. I envied people that write posts out of thin air. It was hard for me to find something to write about. But you know what? It is possible. As a developer you always learn something new. You always step on and solve problems. You can even write about you [hobby][hobby] :)
 

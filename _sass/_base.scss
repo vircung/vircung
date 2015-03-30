@@ -28,7 +28,6 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
@@ -80,7 +79,14 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: bold;
+}
+
+article {
+    > h1, > h2, > h3, > h4, > h5, > h6 {
+        margin-top: $spacing-unit;
+        margin-bottom: $spacing-unit;
+    }
 }
 
 
