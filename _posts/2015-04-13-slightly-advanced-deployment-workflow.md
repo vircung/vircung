@@ -6,6 +6,8 @@ date:   2015-04-13 23:00:00
 
 Over 5 years ago [Vincent Driessen][nvie-twitter] shared with us his well established [git workflow][git-branching-model]. It's very robust and simple (when you wrap your head around it). It almost perfectly fits into agile methodologies. In one of my past projects it was easy to drop in along with migrating from svn to git, and include it to existing [Continuous Integration][ci] system. And everyone was happy. How about more recent one? Happily not so easy. That's good i like challenges.
 
+<!-- more -->
+
 ### What's wrong?
 
 Over last 6 months i wanted to adopt it to one of projects in my job (and migrate from filthy svn to git). Of course it's not so easy because of internal political reasons, policies, produces and tons of documents that has to be signed by millions of people. Hopefully i received information that this can be possible in Q3 or Q4 of 2015's. So let's roll up sleeves and prepare some flow charts and graphs.
