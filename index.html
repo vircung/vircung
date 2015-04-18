@@ -3,7 +3,7 @@ layout: default
 ---
 <ul class="post-list">
 
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <li>
       <h1 class="page-header">
         <a href="{{ post.url | prepend: site.baseurl }}">
@@ -15,5 +15,7 @@ layout: default
       {{ post.content | split: '<!-- more -->' | first }}
     </li>
   {% endfor %}
+
+  {% include posts_pagination.html %}
 
 </ul>

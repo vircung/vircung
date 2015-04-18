@@ -1,0 +1,21 @@
+{% if paginator.total_pages > 1 %}
+  <div class="row clearfix">
+    {% if paginator.previous_page %}
+      <div class="pull-left">
+        <a href="{{ paginator.previous_page_path }}" class="btn btn-default">
+          <i class="fa fa-arrow-left"></i>
+          More recent posts
+        </a>
+      </div>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <div class="pull-right">
+        <a href="{{ paginator.next_page_path }}" class="btn btn-default">
+          Older posts
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
