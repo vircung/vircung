@@ -18,6 +18,30 @@ There's workaround to use `t.uuid :something_else_id` thing. And it's working gr
 
 I started to go through Rails code to search The Place. It's hard to navigate though it. Especially when you go into large codebase for first time. So i stumbled upon migration tests and found this [little gem][uuid-reference-type-github]. It works! But even Rails documentation says nothing about this. But hopefully it's going to be [fixed][rails-uuid-doc-pr] :)
 
+Therefore you can fix `t.references :something` to work with `uuid`
+
+{% highlight ruby %}
+# db/migrate/20150418012400_create_blog.rb
+def change
+  create_table :posts, id: :uuid
+end
+
+create_table :comments, id: :uuid do |t|
+  # t.belongs_to :post, type: :uuid
+  t.references :post, type: :uuid
+end
+
+# app/models/post.rb
+class Post < ActiveRecord::Base
+  has_many :comments
+end
+
+# app/models/comment.rb
+class Comment < ActiveRecord::Base
+  belongs_to :post
+end
+{% endhighlight %}
+
 It would be lovely that migration mechanism would detect referenced column type automatically. I think i can be done. Just need to find proper place to start hacking things.
 
 
