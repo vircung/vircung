@@ -52,7 +52,7 @@ Of course there is workaround. But it should work out of the box.
 PageReference reference1 = new PageReference('/apex/some_page');
 PageReference reference2 = new PageReference('/apex/some_page');
 
-System.assertEquals(reference1, reference2);
+System.assertEquals(reference1.getUrl(), reference2.getUrl());
 
 {% endhighlight %}
 
