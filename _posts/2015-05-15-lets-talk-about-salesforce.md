@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lets talk about Salesforce"
-date:   2015-05-15 15:00:00
+cover: https://static.pexels.com/photos/6508/nature-laptop-outside-macbook.jpg
 ---
 
 As we know all languages has thier quirks and odd/unexpected/undefined behaviours. [Gary Bernhardt][gary-bernhardt] pointed out some of those in his [lighting talk][jsc-wat].

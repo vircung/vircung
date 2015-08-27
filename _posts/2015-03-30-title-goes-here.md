@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Title goes here"
-date:   2015-03-30 22:00:00
+cover: https://static.pexels.com/photos/8349/insect-fly-theme-layers.jpg
 ---
 
 Yeah, that’s pretty much it when you try to find topic to speak about. Especially when you try to find it by yourself. But hey, you’re not lonely island. It’s ok to snag an idea or two from someone’s else blog. That’s because you’ll use different point of view on the topic. It’s called inspiration. And that’s how i came up with this subject that i’ll try to push to few places.

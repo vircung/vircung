@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Slightly advanced deployment workflow"
-date:   2015-04-13 23:00:00
+cover: https://static.pexels.com/photos/7541/pexels-photo.jpeg
 ---
 
 Over 5 years ago [Vincent Driessen][nvie-twitter] shared with us his well established [git workflow][git-branching-model]. It's very robust and simple (when you wrap your head around it). It almost perfectly fits into agile methodologies. In one of my past projects it was easy to drop in along with migrating from svn to git, and include it to existing [Continuous Integration][ci] system. And everyone was happy. How about more recent one? Happily not so easy. That's good i like challenges.

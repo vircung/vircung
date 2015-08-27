@@ -69,3 +69,33 @@ $on-laptop:        800px;
         }
     }
 }
+
+.cover {
+    width: 100%;
+    height: 100%;
+
+    background-color: #464646;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index-cover {
+    min-height: 17em;
+    @extend .cover;
+}
+
+.post-cover {
+    min-height: 30em;
+
+    @extend .cover;
+}
+
+.post-cover-title {
+    color: #fff;
+
+    font-size: 4em;
+    text-shadow: 2px 2px #000;
+
+    @extend .post-title;
+}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building your presence"
-date:   2015-01-29 20:00:00
+cover: https://static.pexels.com/photos/362/marketing-man-person-communication.jpg
 ---
 
 tl;dr

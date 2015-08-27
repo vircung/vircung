@@ -3,6 +3,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="twitter:site" content="@vircung" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ post.excerpt | remove: '<p>' | remove: '</p>'  }}" />
+
+  {% if page.cover %}
+  <meta name="twitter:image" content="{{ page.cover}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  {% else %}
+  <meta name="twitter:card" content="summary" />
+  {% endif %}
+
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">

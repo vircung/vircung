@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Offline DIY fun"
+cover: https://static.pexels.com/photos/3327/construction-work-carpenter-tools.jpg
 ---
 
 How much fun is buying new gadget? Just go to shop, pick something that you definitely don't need but want and buy it. But did you ever wonder how much fun do you get from making such thing? Like RC model? Like flying multirotor (common name is drone)? No? So “Stay Awhile and Listen”.

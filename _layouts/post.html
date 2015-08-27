@@ -1,14 +1,20 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+{% if page.cover %}
+  <aside class="index-cover img-responsive" style="background-image: url({{ page.cover }});height: 512px;"></aside>
+{% endif %}
+
+<div class="container">
+  <header>
+    <span class="pull-right">{{ page.date | date: "%b %-d, %Y" }}</span>
+    <h1 class="page-header clearfix">
+      {{ page.title }}
+    </h1>
   </header>
 
-  <article class="post-content">
+  <article class="text-justify">
     {{ content }}
   </article>
 
