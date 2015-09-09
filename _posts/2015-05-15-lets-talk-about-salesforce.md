@@ -56,6 +56,72 @@ System.assertEquals(reference1.getUrl(), reference2.getUrl());
 
 {% endhighlight %}
 
+## StandardSetController pagination
+
+Let's say we have component for StandardSetController pagination. Component's page is simple and it's similar to standard pagination used by Salesforce. Controller for this component contains few methods to traverse it's records collection. Also it has additional feature to handle collection with edited objects.
+
+{% highlight java %}
+
+public with sharing class StandardSetPaginationController {
+    public ApexPages.StandardSetController setController { get; set; }
+    public Boolean needUpdate { get; set; }
+
+    public void first() {
+        if(needUpdate) setController.save();
+        setController.first();
+    }
+
+    public void last() {
+        if(needUpdate) setController.save();
+        setController.last();
+    }
+    public void next() {
+        if(needUpdate) setController.save();
+        setController.next();
+    }
+
+    public void previous() {
+        if(needUpdate) setController.save();
+        setController.previous();
+    }
+}
+
+{% endhighlight %}
+
+Looks legit, right? And it works flawlessly except one case. When you save controller traversal methods doesn't works as excepted. What i noticed and as i understand is that after save methos is executed set controller reset it's current page number to 1 and you can view only 1 and 2 pages.
+
+Why? I do not know.
+
+How to deal with this? I've got workaround solution. I had to get one. You have to switch page manually. And this woks like a charm.
+
+{% highlight java %}
+
+public with sharing class StandardSetPaginationController {
+    public ApexPages.StandardSetController setController { get; set; }
+    public Boolean needUpdate { get; set; }
+    public Integer currentPage { get { return setController.getPageNumber(); } }
+    public Integer totalPages {
+        get {
+            return (Integer) Math.ceil(
+                (Decimal)setController.getResultSize() / (Decimal) setController.getPageSize()
+            );
+        }
+    }
+
+    public void first()    { goToPage(1); }
+    public void last()     { goToPage(totalPages); }
+    public void next()     { goToPage(currentPage + 1); }
+    public void previous() { goToPage(currentPage - 1); }
+
+    private void goToPage(Integer pageNumer) {
+        if(needUpdate) setController.save();
+        setController.setPageNumber(pageNumer);
+    }
+}
+
+{% endhighlight %}
+
+
 ## This is not the end
 
 This post is going to be published 'rolling release' manner. So there will be updates for sure. Keep in touch :)
