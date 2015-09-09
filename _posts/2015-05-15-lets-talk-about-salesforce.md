@@ -99,14 +99,25 @@ How to deal with this? I've got workaround solution. I had to get one. You have 
 public with sharing class StandardSetPaginationController {
     public ApexPages.StandardSetController setController { get; set; }
     public Boolean needUpdate { get; set; }
-    public Integer currentPage { get { return setController.getPageNumber(); } }
-    public Integer totalPages {
-        get {
-            return (Integer) Math.ceil(
-                (Decimal)setController.getResultSize() / (Decimal) setController.getPageSize()
-            );
-        }
+
+    public Integer currentPageStart {
+        get { return (currentPage - 1) * pageSize + 1; }
     }
+    public Integer currentPageEnd {
+        get { return Math.min(setController.getResultSize(), currentPage * pageSize); }
+    }
+    public Integer currentPage {
+        get { return setController.getPageNumber(); }
+    }
+    public Integer totalPages {
+        get { return (Integer) Math.ceil((Decimal)setController.getResultSize() / (Decimal) pageSize); }
+    }
+    public Integer pageSize {
+        get { return setController.getPageSize(); }
+    }
+
+    public Boolean hasPreviousPage { get { return setController.getHasPrevious(); } }
+    public Boolean hasNextPage     { get { return setController.getHasNext(); } }
 
     public void first()    { goToPage(1); }
     public void last()     { goToPage(totalPages); }
@@ -118,9 +129,68 @@ public with sharing class StandardSetPaginationController {
         setController.setPageNumber(pageNumer);
     }
 }
-
 {% endhighlight %}
 
+And here it is component itself. Neat, right? :)
+
+{% hightlight html %}
+
+<apex:component controller="StandardSetPaginationController" allowDML="true">
+    <apex:attribute name="standardSetController" type="ApexPages.StandardSetController"
+        description="Paginated controller"
+        assignTo="{!setController}" required="true"
+    />
+    <apex:attribute name="rerenderComponents" type="String"
+        description="Id of components to be rerendered on parent's page"
+        required="true"
+    />
+    <apex:attribute name="updateBeforePageChange" type="Boolean"
+        description="If controller needs to save records before page change"
+        assignTo="{!needUpdate}" required="false" default="false"
+    />
+
+    <div class="bottomNav">
+        <div class="paginator">
+            <span class="left">
+                <apex:outputlabel value="{!currentPageStart} - {!currentPageEnd} of {!setController.resultsize}" />
+            </span>
+            <span class="prevNextLinks">
+                <apex:outputPanel rendered="{!hasPreviousPage}">
+                    <span class="prevNext">
+                        <apex:commandlink action="{!first}" rerender="{!rerenderComponents}">
+                            <img src="/s.gif" class="first" />
+                        </apex:commandlink>
+                    </span>
+                    <span class="prevNext">
+                        <apex:commandlink action="{!previous}" rerender="{!rerenderComponents}">
+                            <img src="/s.gif" class="prev" />
+                            Previous
+                        </apex:commandlink>
+                    </span>
+                </apex:outputPanel>
+
+                <apex:outputPanel rendered="{!hasNextPage}">
+                    <span class="prevNext">
+                        <apex:commandlink action="{!next}" rerender="{!rerenderComponents}">
+                            Next
+                            <img src="/s.gif" class="next" />
+                        </apex:commandlink>
+                    </span>
+                    <span class="prevNext">
+                        <apex:commandlink action="{!last}" rerender="{!rerenderComponents}">
+                            <img src="/s.gif" class="last" />
+                        </apex:commandlink>
+                    </span>
+                </apex:outputPanel>
+            </span>
+            <span class="right">
+                <apex:outputlabel value="Page {!currentPage} of {!totalPages}" />
+            </span>
+        </div>
+    </div>
+</apex:component>
+
+{% endhighlight %}
 
 ## This is not the end
 
