@@ -133,7 +133,7 @@ public with sharing class StandardSetPaginationController {
 
 And here it is component itself. Neat, right? :)
 
-{% hightlight html %}
+{% highlight html %}
 
 <apex:component controller="StandardSetPaginationController" allowDML="true">
     <apex:attribute name="standardSetController" type="ApexPages.StandardSetController"
