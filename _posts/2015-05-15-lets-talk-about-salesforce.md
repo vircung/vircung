@@ -192,6 +192,22 @@ And here it is component itself. Neat, right? :)
 
 {% endhighlight %}
 
+## Input field focus
+
+Have you ever wondered how Salesforce is focusing input fields? Or with displayed popup page jumped to first input field out of the sudden? Yeah, that was VisualForce page focusing on input field. Of course you can disable this behaviour with little trick. Actually it's a onelined JavaScript.
+
+Yes. JavaScript. Why? I don't know.
+
+{% highlight html %}
+
+<script>
+    function setFocusOnLoad () { }
+</script>
+
+{% endhighlight %}
+
+And you're done. No more autofocus on this VF page.
+
 ## This is not the end
 
 This post is going to be published 'rolling release' manner. So there will be updates for sure. Keep in touch :)
