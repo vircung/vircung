@@ -1,5 +1,10 @@
 source 'http://rubygems.org'
-gem 'github-pages'
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
-gem 'jekyll-compose', group: [:jekyll_plugins]
+group :jekyll_plugins do
+  gem 'jekyll-compose'
+  gem 'jekyll-paginate'
+  gem 'jekyll-gist'
+  gem 'github-pages'
+end
+
+gem 'wdm' if Gem.win_platform?
