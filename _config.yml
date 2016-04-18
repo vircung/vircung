@@ -9,6 +9,12 @@ url: "http://blog.nakonieczny.it" # the base hostname & protocol for your site
 paginate: 5
 paginate_path: /page/:num/
 
+twitter_username: vircung
+github_username: vircung
+flickr_username: vircung
+linkedin_username: jaceknakonieczny
+gplus_username: JacekNakonieczny
+
 # Build settings
 markdown: kramdown
 excerpt_separator: <!-- more -->
