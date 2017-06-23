@@ -2,6 +2,8 @@
 layout: post
 title:  "Building your presence"
 cover: https://static.pexels.com/photos/362/marketing-man-person-communication.jpg
+tags:
+  - en
 ---
 
 tl;dr

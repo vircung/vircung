@@ -2,6 +2,8 @@
 layout: post
 title:  "Rails Sandbox Take 2: The Docker"
 cover: https://static.pexels.com/photos/4463/man-person-blue-color.jpg
+tags:
+  - en
 ---
 
 Few posts ago i wrote about [rails sandbox](/posts/rails-sandbox) and isolated [development environment](/posts/your-development-environment) using Vagrant and Chef Solo. But there's more options available. One of them is gets more and more traction and gains popularity. It's the Docker.

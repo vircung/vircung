@@ -2,6 +2,8 @@
 layout: post
 title:  "Rails support for UUID"
 cover: https://static.pexels.com/photos/1173/animal-dog-pet-cute.jpg
+tags:
+  - en
 ---
 
 [PostgreSQL][pg-gem-github] is almost popular as [SQLite][sqlite-gem-github] as a database backend for Rails applications. Some of them uses [uuid-ossp][uuid-ossp-extension-github] extension to change type of column `id` to `uuid`. It's common knowledge that `uuid` breaks `references` column type when you want to reflect table relations in migration files. Actually it's not.

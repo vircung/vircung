@@ -2,6 +2,8 @@
 layout: post
 title:  "Your development environment"
 cover: https://static.pexels.com/photos/1340/wood-hut-items-things.jpg
+tags:
+  - en
 ---
 When i wanted to encourage some people to join [YAMEM][yamem-site] dev team big problem popped out. How to setup dev machine that it fulfill project requirements. At that time i said "You need to install this, those and that software" which of course is mistake by default. The reason of this is fairly simple. They're using OSX/Windows, me Ubuntu.
 

@@ -2,6 +2,8 @@
 layout: post
 title: "Places i write to"
 cover: https://static.pexels.com/photos/7103/writing-notes-idea-conference.jpg
+tags:
+  - en
 ---
 
 Once in a while there is a break down. At least i have it from time to time. I had few more or less successful attempts to write a blog. By looking at the dates you can see that there’s another gap in posts. To break the charm i’ll tell you about places that my articles.
