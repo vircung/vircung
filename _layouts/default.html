@@ -12,6 +12,17 @@
 
     {% include footer.html %}
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.4/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.4/jquery.lazy.plugins.min.js"></script>
+
+    <script type="text/javascript">
+	    $(".lazy").Lazy({
+	        scrollDirection: 'vertical',
+	        effect: 'fadeIn',
+	        visibleOnly: true
+	    });
+    </script>
   </body>
 
 </html>

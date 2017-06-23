@@ -1,32 +1,28 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="container">
-  <ul class="post-list">
-
-    {% for post in paginator.posts %}
-      <li>
-        <h1 class="page-header">
+<ul class="post-list">
+  {% for post in paginator.posts %}
+  <li>
+    <h1 class="page-header">
           <a href="{{ post.url | prepend: site.baseurl }}">
             {{ post.title }}
           </a>
-          <span class="post-meta pull-right">{{ post.date | date: "%b %-d, %Y" }}</span>
-        </h1>
+      <span class="post-meta pull-right">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </h1>
 
-        {% if post.cover %}
-          <div class="index-cover" style="background-image: url({{ post.cover }});">
-          </div>
-        {% endif %}
+    {% if post.cover %}
+    <div class="index-cover img-responsive lazy" data-src="{{ post.cover }}">
+    </div>
+    {% endif %}
 
-        <p>
-          {{ post.excerpt }}
-        </p>
-      </li>
-    {% endfor %}
+    <p>
+      {{ post.excerpt }}
+    </p>
+  </li>
+  {% endfor %}
 
-    {% include posts_pagination.html %}
-
-  </ul>
-</div>
+  {% include posts_pagination.html %}
+</ul>
 

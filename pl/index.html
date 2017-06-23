@@ -1,14 +1,13 @@
 ---
 layout: page
-tag: pl
+tag: en
 ---
 
 <ul class="post-list">
 	{% for post in site.posts %}
 	{% for tag in post.tags %}
 	{% if tag == page.tag %}
-	<li class="archive_list">
-
+	<li>
 		<h1 class="page-header">
 			<a href="{{ post.url | prepend: site.baseurl }}">
 				{{ post.title }}
@@ -17,7 +16,7 @@ tag: pl
 		</h1>
 
 		{% if post.cover %}
-		<div class="index-cover" style="background-image: url({{ post.cover }});">
+		<div class="index-cover img-responsive lazy" data-src="{{ post.cover }}">
 		</div>
 		{% endif %}
 

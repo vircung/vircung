@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% if page.cover %}
-  <aside class="index-cover img-responsive" style="background-image: url({{ page.cover }});height: 512px;"></aside>
+  <aside class="index-cover img-responsive lazy" data-src="{{ page.cover }}" style="height: 512px;"></aside>
 {% endif %}
 
 <div class="container">
