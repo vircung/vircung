@@ -1,0 +1,31 @@
+---
+layout: page
+tag: en
+---
+
+<ul class="post-list">
+	{% for post in site.posts %}
+	{% for tag in post.tags %}
+	{% if tag == page.tag %}
+	<li class="archive_list">
+
+		<h1 class="page-header">
+			<a href="{{ post.url | prepend: site.baseurl }}">
+				{{ post.title }}
+			</a>
+			<span class="post-meta pull-right">{{ post.date | date: "%b %-d, %Y" }}</span>
+		</h1>
+
+		{% if post.cover %}
+		<div class="index-cover" style="background-image: url({{ post.cover }});">
+		</div>
+		{% endif %}
+
+		<p>
+			{{ post.excerpt }}
+		</p>
+	</li>
+	{% endif %}
+	{% endfor %}
+	{% endfor %}
+</ul>
