@@ -4,9 +4,7 @@ tag: en
 ---
 
 <ul class="post-list">
-	{% for post in site.posts %}
-	{% for tag in post.tags %}
-	{% if tag == page.tag %}
+	{% for post in site.tags[page.tag] %}
 	<li>
 		<h1 class="page-header">
 			<a href="{{ post.url | prepend: site.baseurl }}">
@@ -24,7 +22,5 @@ tag: en
 			{{ post.excerpt }}
 		</p>
 	</li>
-	{% endif %}
-	{% endfor %}
 	{% endfor %}
 </ul>
