@@ -83,12 +83,15 @@ $on-laptop:        800px;
 .index-cover {
     min-height: 17em;
     @extend .cover;
+    background-image: url(http://via.placeholder.com/900x270?text=Post+cover);
+    display: none;
 }
 
 .post-cover {
     min-height: 30em;
-
     @extend .cover;
+    background-image: url(http://via.placeholder.com/900x270?text=Post+cover);
+    display: none;
 }
 
 .post-cover-title {

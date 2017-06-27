@@ -19,8 +19,9 @@
     <script type="text/javascript">
 	    $(".lazy").Lazy({
 	        scrollDirection: 'vertical',
-	        effect: 'fadeIn',
-	        visibleOnly: true
+          afterLoad: function(element) {
+            $(element).fadeIn();
+          }
 	    });
     </script>
   </body>
