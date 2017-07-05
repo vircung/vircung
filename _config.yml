@@ -2,7 +2,7 @@
 title: Jacek "vircung" Nakonieczny
 email: jacek.nakonieczny+vircung@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Quality content of my own.
+  Quality content of my own with target audience of myself created by Me, I and Myself.
 baseurl: "" # the subpath of your site, e.g. /blog/
 permalink: /posts/:title
 url: "http://www.vircung.com" # the base hostname & protocol for your site

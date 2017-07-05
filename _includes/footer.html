@@ -7,36 +7,34 @@
         <div class="col-md-4">
           <ul class="contact-list">
             <li>{{ site.title }}</li>
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li>{{ site.email | replace:'@',' [at] ' }}</li>
           </ul>
         </div>
 
-        <div class="col-md-4">
-          <ul class="social-media-list">
-            <li>
-              <a href="https://github.com/{{site.github_username}}" rel="me">
-                <i class="fa fa-github-square fa-fw fa-2x"></i>
+        <div class="col-md-4 row">
+          <div class="col-sm-3">
+            <a href="{{ site.data.images.snapchat.url }}">
+              <img class="img-rounded" rel="me" src="{{ site.data.images.snapchat.data  }}" />
+            </a>
+          </div>
+
+          <div class="col-sm-3">
+            <a href="{{ site.data.images.tweeter.url }}">
+              <img class="img-rounded" rel="me" src="{{ site.data.images.tweeter.data  }}" />
+            </a>
+              
+          </div>
+          <div class="col-sm-3">
+              <a href="{{ site.data.images.github.url }}">
+                <img class="img-rounded" rel="me" src="{{ site.data.images.github.data  }}" />
               </a>
-              <a href="https://twitter.com/{{site.twitter_username}}" rel="me">
-                <i class="fa fa-twitter-square fa-fw fa-2x"></i>
+          </div>
+          
+          <div class="col-sm-3">
+              <a href="{{ site.data.images.rss.url }}">
+                <img class="img-rounded" rel="me" src="{{ site.data.images.rss.data  }}" />
               </a>
-              <a href="https://plus.google.com/+{{site.gplus_username}}" rel="me">
-                <i class="fa fa-google-plus-square fa-fw fa-2x"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/{{site.linkedin_username}}" rel="me">
-                <i class="fa fa-linkedin-square fa-fw fa-2x"></i>
-              </a>
-              <a href="https://flickr.com/{{site.flickr_username}}" rel="me">
-                <i class="fa fa-flickr fa-fw fa-2x"></i>
-              </a>
-              <a href="http://feeds.feedburner.com/jacek-nakonieczny-blog" rel="me">
-                <i class="fa fa-rss-square fa-fw fa-2x"></i>
-              </a>
-              <a href="https://calendly.com/vircung/" rel="me">
-                <i class="fa fa-calendar fa-fw fa-2x"></i>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="col-md-4">
