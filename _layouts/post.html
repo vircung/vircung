@@ -1,17 +1,20 @@
 ---
 layout: default
 ---
+{% assign minutes = content | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
 
 {% if page.cover %}
   <aside class="post-cover lazy" data-src="{{ page.cover }}"></aside>
 {% endif %}
 
 <div class="container">
-  <header>
-    <span class="pull-right">{{ page.date | date: "%b %-d, %Y" }}</span>
-    <h1 class="page-header clearfix">
+  <header class="page-header">
+    <h1 class="">
       {{ page.title }}
     </h1>
+      <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span>,
+      <span class="post-meta reading-time">{{minutes}} minute read</span>
   </header>
 
   <article class="text-justify">
