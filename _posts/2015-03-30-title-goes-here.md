@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Title goes here"
-cover: https://static.pexels.com/photos/8349/insect-fly-theme-layers.jpg
+cover: /assets/pexels/pexels-photo-574054.jpeg
+cover-meta: https://www.pexels.com/photo/bug-close-up-damselfly-depth-of-field-574054/
 tags:
   - en
 ---

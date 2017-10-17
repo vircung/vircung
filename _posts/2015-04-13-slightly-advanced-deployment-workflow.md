@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Slightly advanced deployment workflow"
-cover: https://static.pexels.com/photos/7541/pexels-photo.jpeg
+cover: /assets/pexels/pexels-photo-301694.jpeg
+cover-meta: https://www.pexels.com/photo/adult-bed-bedroom-book-301694/
 tags:
   - en
 ---

@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Offline DIY fun"
-cover: https://static.pexels.com/photos/3327/construction-work-carpenter-tools.jpg
+cover: /assets/pexels/tool-hammer-repair-master-162644.jpeg
+cover-meta: https://www.pexels.com/photo/brown-hammer-near-silver-nail-162644/
 tags:
   - en
 ---

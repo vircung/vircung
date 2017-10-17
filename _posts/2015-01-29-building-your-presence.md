@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Building your presence"
-cover: https://static.pexels.com/photos/362/marketing-man-person-communication.jpg
+cover: /assets/pexels/marketing-man-person-communication.jpg
+cover-meta: https://www.pexels.com/photo/marketing-man-person-communication-362/
 tags:
   - en
 ---

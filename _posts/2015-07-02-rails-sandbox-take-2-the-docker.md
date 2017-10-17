@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Rails Sandbox Take 2: The Docker"
-cover: https://static.pexels.com/photos/4463/man-person-blue-color.jpg
+cover: /assets/pexels/man-person-blue-color.jpg
+cover-meta: https://www.pexels.com/photo/blue-color-colour-man-4463/
 tags:
   - en
 ---

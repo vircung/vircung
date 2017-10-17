@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Your development environment"
-cover: https://static.pexels.com/photos/1340/wood-hut-items-things.jpg
+cover: /assets/pexels/pexels-photo-273892.jpeg
+cover-meta: https://www.pexels.com/photo/agriculture-architecture-building-bungalow-273892/
 tags:
   - en
 ---

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Places i write to"
-cover: https://static.pexels.com/photos/7103/writing-notes-idea-conference.jpg
+cover: /assets/pexels/writing-notes-idea-conference.jpg
+cover-meta: https://www.pexels.com/photo/writing-notes-idea-class-7103/
 tags:
   - en
 ---

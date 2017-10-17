@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Rails Sandbox"
-cover: https://static.pexels.com/photos/2693/call-box-phone-box-phones-public.jpg
+cover: /assets/pexels/pexels-photo-220197.jpeg
+cover-meta: https://www.pexels.com/photo/antique-box-call-classic-220197/
 tags:
   - en
 ---

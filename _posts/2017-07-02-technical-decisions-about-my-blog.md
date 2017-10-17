@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Technical decisions about my blog
-cover: https://static.pexels.com/photos/388241/pexels-photo-388241.jpeg
+cover: /assets/pexels/pexels-photo-388241.jpeg
+cover-meta: https://www.pexels.com/photo/black-and-white-blur-close-up-fingers-388241/
 tags:
   - en
 ---
@@ -20,7 +21,7 @@ I like to have full control of my creations and ownership of them. Which is not 
 Self-hosted things
 ---
 
-For self-hosted solutions I was trying to decide between another two, [Ghost](https://ghost.org) or [Jekyll](https://jekyllrb.com) hosted on [Github Pages](https://pages.github.com). Ghost is pretty much simply solution, pleasing for an eye to look at and there is possibility for extending it functionalities as needed. On the other had it's pretty early for it as a project and development of it slowed pretty much which is not conforming me that much. 
+For self-hosted solutions I was trying to decide between another two, [Ghost](https://ghost.org) or [Jekyll](https://jekyllrb.com) hosted on [Github Pages](https://pages.github.com). Ghost is pretty much simply solution, pleasing for an eye to look at and there is possibility for extending it functionalities as needed. On the other had it's pretty early for it as a project and development of it slowed pretty much which is not conforming me that much.
 
 Whats more it requires full server running and to be maintained in case of any downtimes or breaking in. Of course possibility of someone trying to hack in on the server is small. Having experience with server running only [IRC bounceer](https://github.com/vircung/docker-znc) and being shut down due to suspiciously large traffic is nothing that I want to rely on my blog right now. Probably in future when my needs will become more demanding.
 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Lets talk about Salesforce"
-cover: https://static.pexels.com/photos/6508/nature-laptop-outside-macbook.jpg
+cover: /assets/pexels/nature-laptop-outside-macbook.jpg
+cover-meta: https://www.pexels.com/photo/nature-laptop-outside-macbook-6508/
 tags:
   - en
 ---

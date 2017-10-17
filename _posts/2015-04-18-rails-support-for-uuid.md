@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Rails support for UUID"
-cover: https://static.pexels.com/photos/1173/animal-dog-pet-cute.jpg
+cover: /assets/pexels/potatoes-french-mourning-funny-162971.jpeg
+cover-meta: https://www.pexels.com/photo/brown-potato-in-front-of-french-fries-162971/
 tags:
   - en
 ---
